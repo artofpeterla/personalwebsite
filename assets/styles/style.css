@@ -1,0 +1,334 @@
+/* ////////////////////////////////////////////////////////////////
+
+Reset
+
+//////////////////////////////////////////////////////////////// */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////
+
+Custom Styles
+
+//////////////////////////////////////////////////////////////// */
+
+body {
+	font: 300 16px "Lato", sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	color: black;
+	font: 300 italic 64px "Lato", sans-serif;
+	text-decoration: none;
+}
+
+h1 #wordmark {
+	color: grey;
+}
+
+h1 #wordmarkem {
+	color: black;
+	font: 100 italic 72px "Lato", sans-serif;
+}
+
+h3 {
+	color: black;
+	font: 100 italic 27px "Lato", sans-serif;
+	text-decoration: none;
+}
+
+h2 {
+	color: black;
+	font: 400 normal 33px "Lato", sans-serif;
+}
+
+h4 {
+	color: black;
+	font: 100 italic 48px "Lato", sans-serif;
+}
+
+h5 {
+	color: #aaaaaa;
+	font: small-caps 400 27px "Lato", sans-serif;
+}
+
+#copyright {
+	color: black;
+	font: small-caps 300 18px "Lato", sans-serif;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	/*font: normal normal small-caps 300 18px normal "Lato", sans-serif;*/
+	font: small-caps 300 18px "Lato", sans-serif;
+}
+
+a:hover {
+	color: red;
+}
+
+section {
+	display: block;
+}
+
+#cover {
+	height: 1440px;
+}
+
+#section1 {
+	height: 960px;
+	/*padding: 440px 0 72px 0;*/
+}
+
+#section2 {
+	height: 960px;
+}
+
+#section3 {
+	height: 960px;
+}
+
+.header-cover,
+.subheader-cover,
+.easteregg-cover,
+.header-artist,
+.subheader-artist,
+.header-designer,
+.subheader-designer,
+.header-developer,
+.subheader-developer {
+	text-align: center;
+}
+
+.subheader-cover {
+	line-height: 60px;
+}
+
+.easteregg-cover {
+	line-height: 480px;
+}
+
+img.mainlogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#mainlogo-padding {
+	height: 100px;
+}
+
+.subsection-padding {
+	height: 60px;
+}
+
+.subsubsection-padding {
+	height: 40px;
+}
+
+.top-padding {
+	height: 20px;
+}
+
+.bottom-padding {
+	height: 60px;
+}
+
+
+/* ////////////////////////////////////////////////////////////////
+
+Grid
+
+//////////////////////////////////////////////////////////////// */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box_sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.container {  
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row {
+  min-width: 960px;
+  /*padding: 72px 0 72px 0;*/
+}
+
+.row#row1 {
+	background-color: #f8f8f8;
+	
+	background-color: #dbdbdb;
+	background-image: url("../images/painting.png");
+	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.row#row2 {
+	background-color: white
+}
+
+.row#row3 {
+	background-color: #f8f8f8;
+}
+
+.row-vcenter {
+	height: 320px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.cover-vcenter {
+	height: 860px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.row-vcenter-onheading {
+	height: 60px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*
+  ================================================================
+
+  Reusable grid using inline-block method
+
+  ================================================================
+*/
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-1-2 {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.col-1-6 {
+	width: 16.66%;
+}
+
+.col-2-6 {
+	width: 33.33%;
+}
+
+.col-3-6 {
+	width: 50%;
+}
+
+.col-4-6 {
+	width: 66.66%;
+}
+
+.col-5-6 {
+	width: 83.33%;
+}
+
+.col-1-6,
+.col-2-6,
+.col-3-6,
+.col-4-6,
+.col-5-6 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.customtextblock {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	min-height: 480px;
+}
+
+.nav {
+	text-align: right;
+}
